@@ -6,6 +6,6 @@
 其中中国各省GDP来自中国统计局，世界各国数据来自THE WORLD BANK，
 通过在地图上的直观呈现，我们更能直观地发现中国和世界经济发展水平的地理分布，对于我们发现其中蕴含的分布规律和区位优势是很有帮助的
 [作业1（其一）链接](https://github.com/zt156106/zt156106.github.io/GDP of China by province_map.html)
-[作业1（其二）链接](https://github.com/zt156106/zt156106.github.io/tree/main)
+[作业1（其二）链接](https://github.com/zt156106/zt156106.github.io/GDP of China by province_map.html)
 另一张geo地图则是五次中东战争交战双方国家的呈现，这学期我选修了中东地区的国家关系，恰好刚学完以色列建国后发生的五次中东战争，故想通过geo地图来讲交战双方呈现出来。主要是以色列与阿拉伯国家的战争。
 [作业1（其三）链接]()
