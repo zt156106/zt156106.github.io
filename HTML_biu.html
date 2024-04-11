@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            position: relative; /* Setting relative positioning for the body */
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        /* Styling for the annotation */
+        .annotation {
+            position: fixed;
+            bottom: 10px; /* Aligns to the bottom */
+            right: 50%; /* Aligns to the right */
+            transform: translateX(50%); /* Centers horizontally */
+            font-size: 12px;
+            color: #666;
+            background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent background */
+            padding: 5px; /* Adding some padding for better visibility */
+            white-space: nowrap; /* Ensuring the text stays on one line */
+        }
+
+        /* Styling for each character */
+        .annotation span {
+            display: inline-block;
+            transform: rotate(0deg); /* Rotating each character */
+            transform-origin: center; /* Setting the rotation origin */
+        }
+    </style>
+
+    <title>Style</title>
+</head>
+
+<body background="D:\study大一下\py learrn\大作业2\R-C (1).jpg">
+    <p>
+        <img src="D:\study大一下\py learrn\大作业2\微信图片_20240404104138.jpg" width="128" height="100" />
+    </p>
+
+    <h1>Biu~Biu~Biu~</h1>
+
+    <form action="https://cn.bing.com/search" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="biu~一下">
+        <!--点击“提交”按钮后，注意浏览器地址栏的变化-->
+    </form>
+
+    <!-- Annotation -->
+    <div class="annotation">
+        <span>T</span><span>h</span><span>i</span><span>s</span><span> </span><span>i</span><span>s</span><span> </span><span>a</span><span>n</span><span> </span><span>a</span><span>n</span><span>n</span><span>o</span><span>t</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span> </span><span>t</span><span>e</span><span>x</span><span>t</span><span>.</span>
+    </div>
+</body>
+
+</html>
