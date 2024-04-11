@@ -20,4 +20,4 @@
 ### [作业链接](https://zt156106.github.io/connection.html)
 ## 课堂练习
 ### 在课堂练习中我选择了必应作为搜索引擎来实现按搜索功能，并进行了初步的背景图片和文字说明等布局网页。可以实现基础的搜索功能。
-### [练习链接](https://zt156106.github.io/HTML_biu.html)
+### [练习链接](https://zt156106.github.io/HTML_biu2.html)
