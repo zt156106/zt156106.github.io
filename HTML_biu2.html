@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            position: relative; /* Setting relative positioning for the body */
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        /* Styling for the annotation */
+        .annotation {
+            position: fixed;
+            bottom: 10px; /* Aligns to the bottom */
+            right: 50%; /* Aligns to the right */
+            transform: translateX(50%); /* Centers horizontally */
+            font-size: 12px;
+            color: #666;
+            background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent background */
+            padding: 5px; /* Adding some padding for better visibility */
+            white-space: nowrap; /* Ensuring the text stays on one line */
+        }
+
+        /* Styling for each character */
+        .annotation span {
+            display: inline-block;
+            transform: rotate(0deg); /* Rotating each character */
+            transform-origin: center; /* Setting the rotation origin */
+        }
+    </style>
+
+    <title>Style</title>
+</head>
+
+<body background="https://th.bing.com/th/id/R.6ddf1aaf3e7996f47d7e5471d56cefb2?rik=4e9t42TYsfOjUw&riu=http%3a%2f%2fwww.beihaiting.com%2fuploads%2fallimg%2f150929%2f10723-15092ZS6112K.jpg&ehk=rZGoBfoPlfh3B6MjGiLLE7Oc%2bMNovkWvRi1OjrWWKDY%3d&risl=&pid=ImgRaw&r=0">
+
+    <h1>Biu~Biu~Biu~</h1>
+
+    <form action="https://cn.bing.com/search" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="biu~一下">
+        <!--点击“提交”按钮后，注意浏览器地址栏的变化-->
+    </form>
+
+    <!-- Annotation -->
+    <div class="annotation">
+     本网站依托必应实现搜索功能，不涉及任何侵权行为。让爱发射，biu~   
+    </div>
+</body>
+
+</html>
