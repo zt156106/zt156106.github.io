@@ -1,0 +1,3188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物共现关系可视化</title>
+    <style>
+        body {
+            background-image: url("https://pic1.zhimg.com/v2-14098138279e80f7aa5ca90849e91e67_1440w.jpg?source=172ae18b"); /* 设置背景图片路径 */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 100%;
+            width:100%;
+			max-height:100%;
+			height:100%;
+            background-color: rgba(255, 255, 255, 0.8); /* 设置右半部分的背景色和透明度 */
+            padding:0px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+        }
+        .visualization {
+            width: 100%;
+            /* 这里添加你的人物共现关系可视化图的样式 */
+        }
+        .description {
+            width: 50%;
+			height:50%;
+            padding-left: 20px;
+            /* 这里添加文字说明的样式 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="visualization">
+            <!-- 这里放置人物共现关系可视化图的HTML代码 -->
+            <div id="7466144ed5d248ed9f8303a30453a2f7" class="chart-container" style="width:100%; height:500px; "></div>
+        </div>
+        <div class="description">
+            <h2>平凡的世界</h2>
+            <p>通过对平凡的世界人物共现进行分析和可视化，我们发现整部小说围绕少平少安两人展开，
+			两个人之间联系虽然也很多，但是两个人的生活是完全不同的，少安一直生活在双水村，
+			他在改革开放前是优秀的农民生产队长，在改革开放后选择在农村办厂创业，
+			而少平则更愿意到城里打拼开拓视野成为了一名工人，两个人的共性则是不怕吃苦、不怕困难、心地善良、乐善好施，
+			围绕他们的故事也由于生活环境的不同而逐渐不同，少平与其他地方的人关系更密切，少安则与双水村里的人关系更密切。
+			少平与晓霞、少安与润叶秀莲是联系最多的三对，少安与润叶的错过令人遗憾，而少平则不像少安，他勇敢与晓霞交往，
+			可惜晓霞竟不幸遇难！我当时难过了好长时间，他们在爱情上的遭遇亦能给正处青年时期的我们以启示。</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+    <script>
+        var chart_7466144ed5d248ed9f8303a30453a2f7 = echarts.init(
+            document.getElementById('7466144ed5d248ed9f8303a30453a2f7'), 'white', {renderer: 'canvas'});
+        var option_7466144ed5d248ed9f8303a30453a2f7 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 5000,
+                "gravity": 0.2,
+                "edgeLength": [
+                    10,
+                    50
+                ],
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "\u5b59\u5c11\u5e73",
+                    "fixed": false,
+                    "value": 1552,
+                    "symbolSize": 77.6,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5b59\u5c11\u5b89",
+                    "fixed": false,
+                    "value": 1396,
+                    "symbolSize": 69.8,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u7530\u6da6\u53f6",
+                    "fixed": false,
+                    "value": 701,
+                    "symbolSize": 35.05,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u7530\u798f\u5802",
+                    "fixed": false,
+                    "value": 651,
+                    "symbolSize": 32.55,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5b59\u7389\u4ead",
+                    "fixed": false,
+                    "value": 578,
+                    "symbolSize": 28.9,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u7530\u798f\u519b",
+                    "fixed": false,
+                    "value": 523,
+                    "symbolSize": 26.15,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u7530\u6653\u971e",
+                    "fixed": false,
+                    "value": 505,
+                    "symbolSize": 25.25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u91d1\u4fca\u6b66",
+                    "fixed": false,
+                    "value": 373,
+                    "symbolSize": 18.65,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u8d3a\u79c0\u83b2",
+                    "fixed": false,
+                    "value": 365,
+                    "symbolSize": 18.25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u91d1\u6ce2",
+                    "fixed": false,
+                    "value": 309,
+                    "symbolSize": 15.45,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u674e\u5411\u524d",
+                    "fixed": false,
+                    "value": 303,
+                    "symbolSize": 15.15,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5b59\u7389\u539a",
+                    "fixed": false,
+                    "value": 281,
+                    "symbolSize": 14.05,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5b59\u5170\u9999",
+                    "fixed": false,
+                    "value": 234,
+                    "symbolSize": 11.7,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u90dd\u7ea2\u6885",
+                    "fixed": false,
+                    "value": 219,
+                    "symbolSize": 10.95,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u91d1\u4fca\u5c71",
+                    "fixed": false,
+                    "value": 198,
+                    "symbolSize": 9.9,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5f90\u6cbb\u529f",
+                    "fixed": false,
+                    "value": 188,
+                    "symbolSize": 9.4,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u987e\u517b\u6c11",
+                    "fixed": false,
+                    "value": 186,
+                    "symbolSize": 9.3,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u738b\u6ee1\u94f6",
+                    "fixed": false,
+                    "value": 198,
+                    "symbolSize": 9.9,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5f20\u6709\u667a",
+                    "fixed": false,
+                    "value": 170,
+                    "symbolSize": 8.5,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u674e\u767b\u4e91",
+                    "fixed": false,
+                    "value": 158,
+                    "symbolSize": 7.9,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u7530\u6d77\u6c11",
+                    "fixed": false,
+                    "value": 165,
+                    "symbolSize": 8.25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u51af\u4e16\u5bbd",
+                    "fixed": false,
+                    "value": 143,
+                    "symbolSize": 7.15,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5b59\u5170\u82b1",
+                    "fixed": false,
+                    "value": 129,
+                    "symbolSize": 6.45,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u91d1\u4fca\u6587",
+                    "fixed": false,
+                    "value": 117,
+                    "symbolSize": 5.85,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u82d7\u51ef",
+                    "fixed": false,
+                    "value": 115,
+                    "symbolSize": 5.75,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u91d1\u5149\u4eae",
+                    "fixed": false,
+                    "value": 140,
+                    "symbolSize": 7.0,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u91d1\u5bcc",
+                    "fixed": false,
+                    "value": 104,
+                    "symbolSize": 5.2,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u675c\u4e3d\u4e3d",
+                    "fixed": false,
+                    "value": 103,
+                    "symbolSize": 5.15,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u6b66\u60e0\u826f",
+                    "fixed": false,
+                    "value": 102,
+                    "symbolSize": 5.1,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u767d\u660e\u5ddd",
+                    "fixed": false,
+                    "value": 95,
+                    "symbolSize": 4.75,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5218\u6839\u6c11",
+                    "fixed": false,
+                    "value": 94,
+                    "symbolSize": 4.7,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5218\u7389\u5347",
+                    "fixed": false,
+                    "value": 93,
+                    "symbolSize": 4.65,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5f90\u56fd\u5f3a",
+                    "fixed": false,
+                    "value": 104,
+                    "symbolSize": 5.2,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u91d1\u79c0",
+                    "fixed": false,
+                    "value": 88,
+                    "symbolSize": 4.4,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u91d1\u5f3a",
+                    "fixed": false,
+                    "value": 83,
+                    "symbolSize": 4.15,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u4e54\u4f2f\u5e74",
+                    "fixed": false,
+                    "value": 86,
+                    "symbolSize": 4.3,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5b89\u9501\u5b50",
+                    "fixed": false,
+                    "value": 62,
+                    "symbolSize": 3.1,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u80e1\u6c38\u5408",
+                    "fixed": false,
+                    "value": 76,
+                    "symbolSize": 3.8,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u4faf\u7389\u82f1",
+                    "fixed": false,
+                    "value": 59,
+                    "symbolSize": 2.95,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u60e0\u82f1\u5ac2",
+                    "fixed": false,
+                    "value": 93,
+                    "symbolSize": 4.65,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u7530\u4e8c",
+                    "fixed": false,
+                    "value": 56,
+                    "symbolSize": 2.8,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5434\u658c",
+                    "fixed": false,
+                    "value": 50,
+                    "symbolSize": 2.5,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5434\u4ef2\u5e73",
+                    "fixed": false,
+                    "value": 48,
+                    "symbolSize": 2.4,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u8d3a\u51e4\u82f1",
+                    "fixed": false,
+                    "value": 46,
+                    "symbolSize": 2.3,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u5468\u6587\u9f99",
+                    "fixed": false,
+                    "value": 44,
+                    "symbolSize": 2.2,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u738b\u4e16\u624d",
+                    "fixed": false,
+                    "value": 43,
+                    "symbolSize": 2.15,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u91d1\u4fca\u6d77",
+                    "fixed": false,
+                    "value": 42,
+                    "symbolSize": 2.1,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u738b\u5f69\u5a25",
+                    "fixed": false,
+                    "value": 41,
+                    "symbolSize": 2.05,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u7530\u6da6\u751f",
+                    "fixed": false,
+                    "value": 50,
+                    "symbolSize": 2.5,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u91d1\u5149\u660e",
+                    "fixed": false,
+                    "value": 37,
+                    "symbolSize": 1.85,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u7530\u798f\u9ad8",
+                    "fixed": false,
+                    "value": 35,
+                    "symbolSize": 1.75,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u9ad8\u51e4\u9601",
+                    "fixed": false,
+                    "value": 35,
+                    "symbolSize": 1.75,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u536b\u7ea2",
+                    "fixed": false,
+                    "value": 21,
+                    "symbolSize": 1.05,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u4faf\u751f\u624d",
+                    "fixed": false,
+                    "value": 19,
+                    "symbolSize": 0.95,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u674e\u7389\u73b2",
+                    "fixed": false,
+                    "value": 17,
+                    "symbolSize": 0.85,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                },
+                {
+                    "name": "\u8d3a\u8000\u5b97",
+                    "fixed": false,
+                    "value": 13,
+                    "symbolSize": 0.65,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8
+            },
+            "edgeSymbol": [
+                null,
+                null
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 107,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u91d1\u6ce2",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 124,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 27,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u91d1\u6ce2",
+                    "value": 220,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 132,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 107,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 77,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 348,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 72,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 165,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 32,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u4faf\u7389\u82f1",
+                    "value": 125,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 23,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u91d1\u79c0",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 48,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u4faf\u751f\u624d",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u91d1\u5149\u660e",
+                    "value": 30,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 21,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b89\u9501\u5b50",
+                    "value": 41,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u60e0\u82f1",
+                    "value": 29,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u60e0\u82f1\u5ac2",
+                    "value": 31,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 132,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 124,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u91d1\u6ce2",
+                    "value": 72,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 54,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u91d1\u79c0",
+                    "value": 31,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 220,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 45,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u91d1\u4fca\u6d77",
+                    "value": 23,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 43,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 72,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u91d1\u79c0",
+                    "value": 34,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 248,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 163,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 46,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 136,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 71,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5f90\u56fd\u5f3a",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 27,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 173,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u4fca\u6587",
+                    "value": 29,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u5bcc",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 77,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u767d\u660e\u5ddd",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u798f\u9ad8",
+                    "value": 26,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 45,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 36,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u738b\u5bb6\u5e84",
+                    "value": 26,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 27,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u4faf\u7389\u82f1",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 125,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 77,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 29,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 202,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 77,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 224,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 58,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7231\u4e91",
+                    "value": 23,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 79,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u6b66\u60e0\u826f",
+                    "value": 84,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u675c\u4e3d\u4e3d",
+                    "value": 80,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u4e8c",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 50,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 29,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 348,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u91d1\u6ce2",
+                    "value": 45,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 23,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 54,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 202,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u5170\u82b1",
+                    "value": 42,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u738b\u6ee1\u94f6",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 149,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u4fca\u6d77",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7c73\u5bb6\u9547",
+                    "value": 32,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 92,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 165,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u8d3a\u51e4\u82f1",
+                    "value": 37,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 136,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 37,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 144,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 28,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 27,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5218\u6839\u6c11",
+                    "value": 61,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 352,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 21,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u80e1\u6c38\u5408",
+                    "value": 39,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5218\u7389\u5347",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u738b\u6ee1\u94f6",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 149,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u91d1\u4fca\u6d77",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 91,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 46,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 32,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 26,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5218\u7389\u5347",
+                    "value": 36,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6d77",
+                    "target": "\u91d1\u6ce2",
+                    "value": 23,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6d77",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6d77",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5170\u82b1",
+                    "target": "\u738b\u6ee1\u94f6",
+                    "value": 67,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5170\u82b1",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 42,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u91d1\u79c0",
+                    "value": 65,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 72,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u91d1\u6ce2",
+                    "value": 43,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 37,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u5434\u4ef2\u5e73",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u79c0",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 65,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u79c0",
+                    "target": "\u91d1\u6ce2",
+                    "value": 34,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u79c0",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u79c0",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 31,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u738b\u6ee1\u94f6",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u738b\u6ee1\u94f6",
+                    "target": "\u5b59\u5170\u82b1",
+                    "value": 67,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u738b\u6ee1\u94f6",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7c73\u5bb6\u9547",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 32,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 91,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 92,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 248,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u8d3a\u51e4\u82f1",
+                    "value": 49,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 110,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u4e8c",
+                    "value": 50,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 149,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 45,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u5bcc",
+                    "value": 28,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u5f3a",
+                    "value": 75,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u4fca\u658c",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u738b\u5f69\u5a25",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 37,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5218\u7389\u5347",
+                    "value": 31,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u536b\u7ea2",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 39,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 144,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u4fca\u6587",
+                    "value": 116,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u5bcc",
+                    "value": 59,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u5f3a",
+                    "value": 40,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 173,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 107,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 149,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u4fca\u658c",
+                    "value": 38,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u674e\u7389\u73b2",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 39,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 37,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 36,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 21,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u8d3a\u51e4\u82f1",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 49,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u8d3a\u51e4\u82f1",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 37,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 110,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 163,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 28,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 107,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 71,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u767d\u660e\u5ddd",
+                    "value": 75,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 27,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u5218\u6839\u6c11",
+                    "value": 30,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f90\u56fd\u5f3a",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 32,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f90\u56fd\u5f3a",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f90\u56fd\u5f3a",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 34,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 196,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u5468\u6587\u9f99",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 21,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 42,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5f90\u56fd\u5f3a",
+                    "value": 32,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 196,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 27,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 58,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 23,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 31,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 134,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 153,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5468\u6587\u9f99",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u82d7\u51ef",
+                    "value": 100,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u4e54\u4f2f\u5e74",
+                    "value": 21,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u9ad8\u51e4\u9601",
+                    "value": 39,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 116,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 153,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 21,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u82d7\u51ef",
+                    "value": 70,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6587",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 116,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6587",
+                    "target": "\u91d1\u5bcc",
+                    "value": 59,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6587",
+                    "target": "\u91d1\u5f3a",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u4fca\u6587",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 29,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5bcc",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 59,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5bcc",
+                    "target": "\u91d1\u4fca\u6587",
+                    "value": 59,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5bcc",
+                    "target": "\u91d1\u5f3a",
+                    "value": 28,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5bcc",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5bcc",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 28,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5bcc",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 23,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5f3a",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 40,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5f3a",
+                    "target": "\u91d1\u4fca\u6587",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5f3a",
+                    "target": "\u91d1\u5bcc",
+                    "value": 28,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5f3a",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 75,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5f3a",
+                    "target": "\u536b\u7ea2",
+                    "value": 27,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5218\u6839\u6c11",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 61,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5218\u6839\u6c11",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 30,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 224,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 31,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 100,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u91d1\u6ce2",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u6b66\u60e0\u826f",
+                    "value": 21,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7231\u4e91",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 23,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u5f90\u56fd\u5f3a",
+                    "value": 34,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 134,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 100,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 116,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 79,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 42,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u798f\u9ad8",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 26,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u767d\u660e\u5ddd",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 75,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u767d\u660e\u5ddd",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 23,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 45,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 45,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u5bcc",
+                    "value": 23,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u5218\u7389\u5347",
+                    "value": 28,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u4fca\u658c",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 38,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u4fca\u658c",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u738b\u5f69\u5a25",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 33,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 352,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u8d3a\u8000\u5b97",
+                    "value": 40,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 48,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 26,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u8d3a\u8000\u5b97",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 40,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u91d1\u5149\u660e",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 30,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5468\u6587\u9f99",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5468\u6587\u9f99",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u6b66\u60e0\u826f",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 84,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u6b66\u60e0\u826f",
+                    "target": "\u675c\u4e3d\u4e3d",
+                    "value": 59,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u6b66\u60e0\u826f",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 21,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u4faf\u751f\u624d",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u82d7\u51ef",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 70,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u82d7\u51ef",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 100,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u82d7\u51ef",
+                    "target": "\u9ad8\u51e4\u9601",
+                    "value": 27,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u82d7\u51ef",
+                    "target": "\u5434\u658c",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5218\u7389\u5347",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 28,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5218\u7389\u5347",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 31,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5218\u7389\u5347",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 36,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5218\u7389\u5347",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 25,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u738b\u5bb6\u5e84",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 26,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u4e54\u4f2f\u5e74",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 21,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u675c\u4e3d\u4e3d",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 80,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u675c\u4e3d\u4e3d",
+                    "target": "\u6b66\u60e0\u826f",
+                    "value": 59,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u9ad8\u51e4\u9601",
+                    "target": "\u82d7\u51ef",
+                    "value": 27,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u9ad8\u51e4\u9601",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 39,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5434\u658c",
+                    "target": "\u82d7\u51ef",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u80e1\u6c38\u5408",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 39,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 21,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5b89\u9501\u5b50",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 41,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u60e0\u82f1",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 29,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u60e0\u82f1\u5ac2",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 31,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u5434\u4ef2\u5e73",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u536b\u7ea2",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 24,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u536b\u7ea2",
+                    "target": "\u91d1\u5f3a",
+                    "value": 27,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": "\u674e\u7389\u73b2",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 22,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": false,
+            "text": "\u5173\u7cfb\u56fe-\u5e73\u51e1\u7684\u4e16\u754c\u4eba\u7269-\u5206\u7c7b",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_7466144ed5d248ed9f8303a30453a2f7.setOption(option_7466144ed5d248ed9f8303a30453a2f7);
+    </script>
+</body>
+</html>
